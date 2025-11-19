@@ -1,0 +1,200 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #fff;
+            color: #000;
+        }
+
+        .main-container {
+            display: flex;
+            width: 900px;
+            height: 550px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* LEFT SIDE */
+        .left-panel {
+            flex: 1;
+            background: #008080;
+            /* ✅ teal */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .left-panel h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .left-panel p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .left-panel a.login-btn {
+            display: inline-block;
+            padding: 10px 35px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .left-panel a.login-btn:hover {
+            background: #fff;
+            color: #008080;
+            /* ✅ teal hover text */
+        }
+
+        .left-panel .home-link {
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* RIGHT SIDE */
+        .right-panel {
+            flex: 1;
+            background: #fff;
+            padding: 60px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            color: #000;
+        }
+
+        .right-panel .help {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .right-panel .help a {
+            color: #008080;
+            /* ✅ teal */
+            text-decoration: none;
+        }
+
+        .right-panel h2 {
+            color: #008080;
+            /* ✅ teal */
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .right-panel form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .right-panel input {
+            padding: 12px 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 15px;
+            transition: border 0.3s ease;
+            color: #000;
+        }
+
+        .right-panel input::placeholder {
+            color: #555;
+        }
+
+        .right-panel input:focus {
+            border-color: #008080;
+            /* ✅ teal focus */
+            box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.1);
+        }
+
+        .right-panel label {
+            font-size: 14px;
+            color: #000;
+        }
+
+        .right-panel button {
+            margin-top: 10px;
+            padding: 12px;
+            background: #008080;
+            /* ✅ teal button */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .right-panel button:hover {
+            background: #006666;
+            /* ✅ darker teal hover */
+        }
+
+        .terms {
+            font-size: 14px;
+            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terms a {
+            color: #008080;
+            /* ✅ teal */
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .main-container {
+                flex-direction: column;
+                width: 95%;
+                height: auto;
+            }
+
+            .left-panel {
+                padding: 60px 20px;
+            }
+
+            .right-panel {
+                padding: 40px 20px;
+            }
+
+            .right-panel .help {
+                top: 15px;
+                right: 20px;
+            }
+        }

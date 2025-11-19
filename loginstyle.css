@@ -1,0 +1,171 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #000;
+    }
+
+    /* Main Container */
+    .main-container {
+        display: flex;
+        width: 900px;
+        height: 550px;
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 1, 0.3);
+        position: relative;
+    }
+
+    /* Logo */
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #008080;
+        /* ✅ teal */
+        letter-spacing: 1px;
+    }
+
+    /* Left: Login Section */
+    .login-container {
+        flex: 1;
+        padding: 80px 50px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-container h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #000;
+    }
+
+    .login-container p {
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .login-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+        outline: none;
+        transition: all 0.3s ease;
+        color: #000;
+    }
+
+    .login-container input:focus {
+        border-color: #008080;
+        /* ✅ teal border focus */
+        box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.15);
+    }
+
+    .forgot {
+        text-align: right;
+        margin-top: -10px;
+    }
+
+    .forgot a {
+        color: #008080;
+        /* ✅ teal */
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .forgot a:hover {
+        text-decoration: underline;
+    }
+
+    .login-btn {
+        background: #008080;
+        /* ✅ teal button */
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+        background: #006666;
+        /* ✅ darker teal hover */
+    }
+
+    .register {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .register a {
+        color: #008080;
+        /* ✅ teal link */
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .register a:hover {
+        text-decoration: underline;
+    }
+
+    /* Right: Image Section */
+    .image-container {
+        flex: 1;
+        background: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .main-container {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .image-container {
+            height: 250px;
+        }
+
+        .logo {
+            top: 10px;
+            left: 20px;
+            font-size: 18px;
+        }
+    }
